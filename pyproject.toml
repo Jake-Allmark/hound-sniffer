@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hound-sniffer"
+version = "0.1.0"
+description = "Terminal-first SOC threat intelligence investigation tool"
+requires-python = ">=3.10"
+dependencies = [
+    "typer>=0.15",
+    "rich>=13.9",
+    "httpx>=0.28",
+    "dnspython>=2.7,<3",
+    "textual>=0.80,<10"
+]
+
+[project.scripts]
+hound = "hound.cli:app"
+
+[tool.setuptools.packages.find]
+include = ["hound*"]

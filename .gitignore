@@ -1,0 +1,17 @@
+.venv/
+__pycache__/
+*.pyc
+.env
+.env.*
+*.key
+*.pem
+*.db
+*.sqlite
+*.log
+.hound-backups/
+hound/tui/
+reports/
+report*.json
+build/
+dist/
+*.egg-info/
